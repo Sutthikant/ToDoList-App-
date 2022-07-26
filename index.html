@@ -19,6 +19,20 @@
             <h2 class="title">
                 What's up, <input type="text" id="name" placeholder="Name here">
             </h2>
+            <h2 class="title">
+                    What you gonna do in  "
+                        <div id="current_date"></p>
+                        <script>
+                        const weekday = ["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"];
+                        date = new Date();
+                        year = date.getFullYear();
+                        month = date.getMonth() + 1;
+                        day = date.getDate();
+                        dayday = weekday[date.getDay()];
+                        document.getElementById("current_date").innerHTML = dayday + " " + day + "/" + month + "/" + year;
+                        </script>"
+                        </div>
+            </h2>
         </section>
 
         <section class="create-todo">
